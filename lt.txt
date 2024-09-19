@@ -1,0 +1,20 @@
+import numpy as np
+
+from scipy.signal import lfilter
+from matplotlib.pyplot import plt 
+#total weekly
+def total(tading_volume):
+    list count[]
+    for i in range(0,126):
+        sum=0
+        for k in range(0,30):
+            sum=sum+trading_volume
+    
+sum=np.sum(trading_volume)
+return sum
+trading_volume=np.rand.random(126)
+smooth_trading_volume=lfilter(126)
+tot=total(trading_volume)
+print('total=', total)
+plt.plot(trading_volume)
+plt.show()
